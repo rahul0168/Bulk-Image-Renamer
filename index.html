@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Image Renamer  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rename Images in ZIP</h1>
+    <input type="file" id="zipInput" accept=".zip" />
+    <br>
+    <input type="text" id="prefixInput" placeholder="Enter prefix for images" />
+    <br>
+    <button id="processZip"><i class="fas fa-upload"></i> Process ZIP File</button>
+    <div class="loader" id="loader">
+      <i class="fas fa-spinner"></i> Processing...
+    </div>
+    <a id="downloadLink" style="display: none;">Download New ZIP</a>
+  </div>
+
+  <script type="text/javascript" src="assets/js/custom.js" ></script>
+</body>
+</html>
